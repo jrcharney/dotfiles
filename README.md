@@ -2,6 +2,8 @@
 
 Welcome to my dotfiles.
 
+![Latest Screenshot](./assets/images/dotfiles_20230119.png)
+
 These files contain copies of some of the applications that I usually use to set up my workflow.
 
 Featured dotfiles for apps include:
@@ -41,6 +43,8 @@ And that's just for starter. I'll be sure to list more stuff later.
 - [ ] Prettier support.
 - [ ] I'm writing this file in markdown, but where's my autotext?
 - [ ] How do I manipulate files if I don't have things wrapped in Tmux?
+    - You can execute `git` commands without leaving `nvim`. This is likely thanks to [Vim Fugitive](https://github.com/tpope/vim-fugitive). Instead of typing `git [whatever git command]`, you use `:Git [whatever git command]`. The icons in NVimTree should indicate which files have been staged and which files haven't.
+- [ ] Rather than have those Git icons appear next to the file Icon, can we show them on the left side of of NvimTree?
 - [ ] What should users Install?
 - [ ] What should users install if they aren't using Arch Linux or a linux repo like Arch?
 - [ ] What should users install if they aren't using Linux (esp. if they have Windows?)
@@ -53,4 +57,5 @@ And that's just for starter. I'll be sure to list more stuff later.
 * If your color scheme hasn't set the window split separator to look nice, use `:highlight WinSeparator guibg=None` to get rid of that background. Most should have that now.
 * Defintely give [Telescope](https://github.com/nvim-telescope/telescope.nvim) a try. You can call it up with `:Telescope`. The goal of using it should be similar to using CTRL+P in VSCode. Vim users might remember the CTRL+P plugin. Same purpose. Telescope was one of the plugins that came with Kickstart, but I kept it because I like it.
 * If you don't know what the `<leader>` is, they are talking about the colon (`:`) that typically starts a Vim command in command mode.
+* You should create a `~/.bash_aliases` file to use with `~/.bashrc` and `~/.zshrc`
 
